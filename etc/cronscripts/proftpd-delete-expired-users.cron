@@ -1,0 +1,15 @@
+NAME="proftpd-delete-expired-users"
+AUTHOR="Cyberfusion <system-messages.foundation@cyberfusion.io>"
+TUXIS_CRONLOCK="/tmp/.tuxis-cron.$NAME.lock"
+MASTERLOG="/var/log/tuxis-cron/$NAME.log"
+PATH=/usr/local/bin:/usr/bin:/bin:/sbin:/usr/sbin
+PROTECTLOG=yes
+
+ESCALATE_MAILTO="system-messages.foundation@cyberfusion.io"
+
+SCRIPT=/usr/bin/proftpd-support-delete-expired-users
+
+func_cron()
+{
+  $SCRIPT || fatal "Could not run script"
+}

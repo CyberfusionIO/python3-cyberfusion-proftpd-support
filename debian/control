@@ -1,0 +1,13 @@
+Source: python3-cyberfusion-proftpd-support
+Section: misc
+Priority: optional
+Maintainer: William Edwards <wedwards@cyberfusion.nl>
+Build-Depends: python3-all, dh-python, debhelper (>= 10), python3-setuptools, pybuild-plugin-pyproject, dh-sequence-single-binary
+Standards-Version: 4.3.0
+
+Package: python3-cyberfusion-proftpd-support
+Architecture: all
+Suggests: proftpd-core
+Depends: python3, tuxis-cron, ${python3:Depends}, ${misc:Depends}
+Description: Library to manage ProFTPD.
+ Library to manage ProFTPD.
