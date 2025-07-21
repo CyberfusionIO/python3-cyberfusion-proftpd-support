@@ -36,9 +36,11 @@ from cyberfusion.ProftpdSupport.users import create_proftpd_user
 
 user = create_proftpd_user(
     username="example",
-    password="example",
+    password="$2b$12$sDnzo8pxCvX05NEBhlBXPuhgPFb6mO.AGwq9yU64eZxOKHuhe4OqC",
     uid=1000,
     gid=1000,
     home_directory="/home/example",
 )
 ```
+
+⚠️ You must hash the password yourself. You can use [`ftpasswd`](http://www.proftpd.org/docs/contrib/ftpasswd.html) for this.
