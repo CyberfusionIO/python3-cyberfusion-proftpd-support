@@ -4,7 +4,9 @@ from pathlib import Path
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_prefix="proftpd_support_", env_file=(".env", "/etc/proftpd-support.conf")
+        env_prefix="proftpd_support_",
+        env_file=(".env", "/etc/proftpd-support.conf"),
+        extra="ignore",
     )
 
     database_path: Path

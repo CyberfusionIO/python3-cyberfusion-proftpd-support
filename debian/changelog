@@ -1,3 +1,9 @@
+python3-cyberfusion-proftpd-support (1.1.1) unstable; urgency=low
+
+  - Ignore extra settings for easier config changes
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Wed, 11 Feb 2026 16:57:00 +0200
+
 python3-cyberfusion-proftpd-support (1.1) unstable; urgency=low
 
   - Update to Trixie
