@@ -11,7 +11,7 @@ authors = [
     { name = "Cyberfusion", email = "support@cyberfusion.io" },
 ]
 dependencies = [
-    "pydantic-settings==2.13.0",
+    "pydantic-settings==2.13.1",
 ]
 
 [project.urls]
