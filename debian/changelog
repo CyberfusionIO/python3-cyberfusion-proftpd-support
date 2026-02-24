@@ -1,3 +1,9 @@
+python3-cyberfusion-proftpd-support (1.1.2) unstable; urgency=low
+
+  - Update dependencies
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 24 Feb 2026 23:35:00 +0200
+
 python3-cyberfusion-proftpd-support (1.1.1) unstable; urgency=low
 
   - Ignore extra settings for easier config changes
