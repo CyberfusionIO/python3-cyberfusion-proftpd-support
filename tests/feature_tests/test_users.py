@@ -84,7 +84,7 @@ def test_get_expire_users_ids_any(
 
     cursor.execute(
         "UPDATE `users` SET `created_at` = ? WHERE `id` = ?",
-        (created_at, str(proftpd_user.id)),
+        (created_at, proftpd_user.id),
     )
 
     assert get_expire_users_ids() == [proftpd_user.id]
@@ -103,7 +103,7 @@ def test_delete_expire_users(
 
     cursor.execute(
         "UPDATE `users` SET `created_at` = ? WHERE `id` = ?",
-        (created_at, str(proftpd_user.id)),
+        (created_at, proftpd_user.id),
     )
 
     assert get_expire_users_ids() == [proftpd_user.id]

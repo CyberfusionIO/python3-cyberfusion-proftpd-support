@@ -51,7 +51,7 @@ def delete_expire_users() -> None:
     cursor = connection.cursor()
 
     for id_ in expire_users_ids:
-        cursor.execute("DELETE FROM `users` WHERE `id` = ?", (str(id_)))
+        cursor.execute("DELETE FROM `users` WHERE `id` = ?", (id_,))
 
 
 def get_users_amount() -> int:
